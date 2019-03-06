@@ -5,4 +5,7 @@ services:
 
 before_install:
   - docker build -t EricJPWang/docker-app -f Dockerfile .
-  
+
+
+script:
+  - docker run EricJPWang/docker-app ng test --watch=false
