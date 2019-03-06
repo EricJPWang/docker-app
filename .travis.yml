@@ -8,4 +8,4 @@ before_install:
 
 
 script:
-  - docker run ericjpwang/docker-app ng test --watch=false
+  - docker run ericjpwang/docker-app npm run test

@@ -17,4 +17,4 @@ RUN npm install
 RUN npm install @angular/cli
 COPY . .
 
-CMD ng serve  --host 0.0.0.0
+CMD ng serve  --host
