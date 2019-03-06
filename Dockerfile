@@ -8,7 +8,7 @@ RUN apt-get update && apt-get install -yq google-chrome-stable
 
 # add `/usr/src/app/node_modules/.bin` to $PATH
 ENV PATH /usr/src/app/node_modules/.bin:$PATH
-ENV CHROME_BIN=/usr/bin/google-google-chrome-stable
+ENV CHROME_BIN=/usr/bin/google-chrome-stable
 
 
 WORKDIR /usr/src/app
@@ -17,4 +17,4 @@ RUN npm install
 RUN npm install @angular/cli
 COPY . .
 
-CMD ng serve  --host
+CMD ng serve  --host 0.0.0.0
